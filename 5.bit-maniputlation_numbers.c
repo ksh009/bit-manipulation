@@ -14,6 +14,12 @@ int main()
         6 / 2 = 0
         3 / 2 = 1
         1 / 2 = 1
+
+        __Calc binary for 8
+        8 / 2 = 0 => (0 * 1 = 0)
+        4 / 2 = 0 => (0 * 2 = 0)
+        2 / 2 = 0 => (0 * 4 = 0)
+        1 / 2 = 1 => (1 * 8 = 8)
     */
     unsigned int num1 = 10; // binary 1010
     unsigned int num2 = 12; // binary 1100
@@ -23,7 +29,7 @@ int main()
     // Bitwise AND
     unsigned int result1 = num1 & num2;
     printf("num2 %u\n", result1);
-    printf("Bitwise AND: %u\n", result1); // prints 8
+    printf("Bitwise AND: %u\n", result1); // prints 8 => in binary 1000
 
     // Bitwise OR
     unsigned int result2 = num1 | num2;
@@ -47,3 +53,16 @@ int main()
 
     return 0;
 }
+
+/*
+    Bitwise operator benefits
+
+        1. Efficiency: Bitwise operators are often faster and more efficient than other methods of manipulating binary numbers. This is because they can perform multiple operations in a single instruction, making them particularly useful for high-performance applications where speed is critical.
+
+        2. Clarity: Bitwise operations can make code more concise and easier to understand. By using bitwise operators, you can express complex operations on binary data in a clear and simple way, which can help make your code more readable and maintainable.
+
+        3. Portability: Bitwise operations are often more portable than other methods of binary manipulation. This is because they are supported by most programming languages and hardware architectures, so you can use them in a wide variety of systems and applications.
+
+        4. Versatility: Bitwise operators are versatile and can be used for a wide range of operations, from simple bit manipulation to complex data structures and algorithms. By learning how to use bitwise operators effectively, you can open up a world of possibilities for manipulating binary data and creating efficient and elegant code.
+
+*/
