@@ -33,6 +33,11 @@ int main()
         6 / 2 = 0 => (0 * 1 = 0)
         3 / 2 = 1 => (1 * 2 = 2)
         1 / 2 = 1 => (1 * 4 = 4)
+
+        __Calc binary for 5
+        2 / 2 = 1 => (1 * 1 = 1)
+        2 / 2 = 0 => (0 * 2 = 0)
+        1 / 2 = 1 => (1 * 4 = 4)
     */
     unsigned int num1 = 10; // binary 1010
     unsigned int num2 = 12; // binary 1100
@@ -61,10 +66,16 @@ int main()
     unsigned int result3 = num1 ^ num2;
     printf("Bitwise XOR: %u\n", result3); // prints 6 = in binary 0110
 
+    /*
+       4. NOT (~): The NOT operator flips all the bits of a number, i.e., 1s become 0s and 0s become 1s.
+    */
     // Bitwise NOT
     unsigned int result4 = ~num1;
-    printf("Bitwise NOT: %u\n", result4); // prints 4294967285
+    printf("Bitwise NOT: %u\n", result4); // prints 5 => in binary 0101
 
+    /*
+      The left shift operator (<<) moves the bits of a number to the left by a specified number of positions.
+    */
     // Left Shift
     unsigned int result5 = num1 << 2;
     printf("Left Shift: %u\n", result5); // prints 40
