@@ -20,20 +20,32 @@ int main()
         4 / 2 = 0 => (0 * 2 = 0)
         2 / 2 = 0 => (0 * 4 = 0)
         1 / 2 = 1 => (1 * 8 = 8)
+
+        __Calc binary for 14
+        14 / 2 = 0 => (0 * 1 = 0)
+        7 / 2 = 1 => (1 * 2 = 2)
+        3 / 2 = 1 => (1 * 4 = 4)
+        1 / 2 = 1 => (1 * 8 = 8)
     */
     unsigned int num1 = 10; // binary 1010
     unsigned int num2 = 12; // binary 1100
     printf("num1 %u\n", num1);
     printf("num2 %u\n", num2);
 
+    /*
+        1. AND (&): The AND operator compares each bit of two numbers and returns a new number with a 1 bit only if both corresponding bits are 1. Otherwise, the bit is set to 0.
+    */
     // Bitwise AND
     unsigned int result1 = num1 & num2;
     printf("num2 %u\n", result1);
     printf("Bitwise AND: %u\n", result1); // prints 8 => in binary 1000
 
+    /*
+      2. OR (|): The OR operator compares each bit of two numbers and returns a new number with a 1 bit if either corresponding bit is 1. Otherwise, the bit is set to 0.
+    */
     // Bitwise OR
     unsigned int result2 = num1 | num2;
-    printf("Bitwise OR: %u\n", result2); // prints 14
+    printf("Bitwise OR: %u\n", result2); // prints 14 = in binary 1110
 
     // Bitwise XOR
     unsigned int result3 = num1 ^ num2;
