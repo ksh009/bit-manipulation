@@ -4,6 +4,8 @@ int main()
 {
     unsigned int num1 = 0xA; // binary 1010
     unsigned int num2 = 0xC; // binary 1100
+    printf("num1 %x\n", num1);
+    printf("num2 %x\n", num2);
 
     // Bitwise AND
     unsigned int result1 = num1 & num2;
