@@ -3,6 +3,8 @@
 int main()
 {
     /*
+        NB => With 4 bits, you can represent up to 2^4 = 16 different values. The largest value that can be represented with 4 bits is 2^4 - 1 = 15.
+
         __Calc binary for 10
         10 / 2 = 0
         5 / 2 = 1
@@ -26,6 +28,11 @@ int main()
         7 / 2 = 1 => (1 * 2 = 2)
         3 / 2 = 1 => (1 * 4 = 4)
         1 / 2 = 1 => (1 * 8 = 8)
+
+        __Calc binary for 6
+        6 / 2 = 0 => (0 * 1 = 0)
+        3 / 2 = 1 => (1 * 2 = 2)
+        1 / 2 = 1 => (1 * 4 = 4)
     */
     unsigned int num1 = 10; // binary 1010
     unsigned int num2 = 12; // binary 1100
@@ -45,11 +52,14 @@ int main()
     */
     // Bitwise OR
     unsigned int result2 = num1 | num2;
-    printf("Bitwise OR: %u\n", result2); // prints 14 = in binary 1110
+    printf("Bitwise OR: %u\n", result2); // prints 14 => in binary 1110
 
+    /*
+        3. XOR (^): The XOR operator compares each bit of two numbers and returns a new number with a 1 bit only if the corresponding bits are different. Otherwise, the bit is set to 0.
+    */
     // Bitwise XOR
     unsigned int result3 = num1 ^ num2;
-    printf("Bitwise XOR: %u\n", result3); // prints 6
+    printf("Bitwise XOR: %u\n", result3); // prints 6 = in binary 0110
 
     // Bitwise NOT
     unsigned int result4 = ~num1;
