@@ -2,6 +2,19 @@
 
 int main()
 {
+    /*
+        __Calc binary for 10
+        10 / 2 = 0
+        5 / 2 = 1
+        2 / 2 = 0
+        1 / 2 = 1
+
+        __Calc binary for 12
+        12 / 2 = 0
+        6 / 2 = 0
+        3 / 2 = 1
+        1 / 2 = 1
+    */
     unsigned int num1 = 10; // binary 1010
     unsigned int num2 = 12; // binary 1100
     printf("num1 %u\n", num1);
@@ -9,6 +22,7 @@ int main()
 
     // Bitwise AND
     unsigned int result1 = num1 & num2;
+    printf("num2 %u\n", result1);
     printf("Bitwise AND: %u\n", result1); // prints 8
 
     // Bitwise OR
