@@ -5,6 +5,8 @@ int main()
     /*
         NB => With 4 bits, you can represent up to 2^4 = 16 different values. The largest value that can be represented with 4 bits is 2^4 - 1 = 15.
 
+        NB => The largest unsigned integer that can be represented with 8 bits is 2^8 - 1, which equals 255. 8 bits also equals 1 byte
+
         __Calc binary for 10
         10 / 2 = 0
         5 / 2 = 1
@@ -38,6 +40,14 @@ int main()
         2 / 2 = 1 => (1 * 1 = 1)
         2 / 2 = 0 => (0 * 2 = 0)
         1 / 2 = 1 => (1 * 4 = 4)
+
+        __Calc binary for 40
+        40 / 2 = 0 (0 * 0 = 0)
+        20 / 2 = 0 (0 * 2 = 0)
+        10 / 2 = 0 (0 * 4 = 0)
+        5 / 2 = 1 (1 * 8 = 8)
+        2 / 2 = 0 (0 * 16 = 0)
+        1 / 2 = 1 (1 * 32 = 32)
     */
     unsigned int num1 = 10; // binary 1010
     unsigned int num2 = 12; // binary 1100
@@ -78,11 +88,14 @@ int main()
     */
     // Left Shift
     unsigned int result5 = num1 << 2;
-    printf("Left Shift: %u\n", result5); // prints 40
+    printf("Left Shift: %u\n", result5); // prints 40 => in binary 0000 1010
 
+    /*
+        The right shift operator (>>) moves the bits of a number to the right by a specified number of positions. When we shift a number to the right, we lose the rightmost bits of the number.
+    */
     // Right Shift
     unsigned int result6 = num1 >> 1;
-    printf("Right Shift: %u\n", result6); // prints 5
+    printf("Right Shift: %u\n", result6); // prints 5 => in binary 0101
 
     return 0;
 }
